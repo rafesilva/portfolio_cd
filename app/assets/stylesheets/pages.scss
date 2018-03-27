@@ -1,22 +1,22 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+html {scroll-behavior: smooth;}
 content{
 }
 
 body { 
-    background-color: black;
     
-     
+    background-color: black;
 
     position: absolute;
    
     text-align: center;
-    
+  
 }
 
 ///////// MENU
+
 ul {
     box-sizing: borde-box;
     position: absolute;
@@ -76,13 +76,13 @@ li a:hover {
     
     }
     
-    .buttom:hover {
+.buttom:hover {
     
         background: rgba(233, 222, 72, 0.692);}
     
     
     
-    .content{
+.content{
         box-sizing: borde-box;
         background-color: rgb(15, 15, 15);
        
@@ -220,6 +220,7 @@ li a:hover {
     top: -210px;
     position:relative;
     box-sizing: borde-box;
+    border-color: black;
     animation: 
             dark 3s 0.3s forwards linear,
 
@@ -462,7 +463,8 @@ li a:hover {
 
 h2 {
     font-family: 'Libre Barcode 128 Text', cursive;
-    font-size: 60px;
+    font-size: 65px;
+    top: 25px;
 
 h3 {font-family: 'Roboto', sans-serif;}
 
@@ -510,6 +512,7 @@ div.a {
     background-color: #f2f2f2;
     padding: 20px;
     opacity: 0.85;
+    
 }
 div.b {
     position: absolute;
@@ -532,12 +535,12 @@ div.c {
 
 }
 
-a.profile_photo {
+img.profile_photo {
     position: absolute;
-    right:-1830px;
-    bottom: 2500px;
-    height: 200px;
-    width: 330%;
+    left: 830px;
+    bottom: 2430px;
+    height: 9%;
+   width: 50%;
     transform:rotateZ(15deg);
     
     
@@ -546,25 +549,39 @@ a.profile_photo {
 
 ////////FUNCTIONS AND ICONS
 
-.go_up {
+a.go_up {
     position: absolute;
     height: 35px;
     width: 35px;
     top:105%;
     right:10px;
-    background-color: rgba(241, 219, 19, 0.87);
+    
+    background-color: rgba(75, 71, 27, 0.87);
     border-radius: 50%;
     display: inline-block;
+    border-color:black;
+    color:white;
+    font-size: 19px;
+    opacity: 1;
    
     
 }
 
- .gp_up:hover { 
+ a.go_up:hover { 
 
-position: absolute;
-background: white;
-transform: rotate(90deg);
 
+background: rgba(228, 200, 43, 0.836);
+animation: go_up 1s ease-in,
+            show_up 0.5s;
+color: black;
+
+
+}
+@keyframes go_up{
+    0%{ transform:rotateZ(5deg);}
+
+
+   100% { transform:rotateZ(1440deg);}
 }
 
 a.footer {
@@ -572,7 +589,7 @@ a.footer {
   
     position: fixed;
     left: 555px;
-    bottom: 50px;
+    bottom: 20px;
     font-size: 30px;
     font-family: 'Libre Barcode 128 Text', cursive;
     width: 320px;
@@ -589,7 +606,7 @@ a.footer {
     position: fixed;
     text-align: center;
     width: 50px;
-     transform: translate(10px, 420px) rotateY(20deg);
+     transform: translate(10px, 410px) rotateY(20deg);
      animation: show_up 3s 14s forwards;
      opacity: 0;
 }
@@ -598,7 +615,7 @@ a.footer {
     position: fixed;
     text-align: center;
     width: 55px;
-    transform: translate(80px, 420px) rotateY(25deg);
+    transform: translate(80px, 405px) rotateY(25deg);
     animation: show_up 3s 14s forwards;
     opacity: 0;
 
@@ -609,7 +626,7 @@ a.footer {
 
     text-align: center;
     width: 65px;
-    transform: translate(150px, 420px);
+    transform: translate(150px, 405px);
     animation: show_up 3s 14s forwards;
     opacity: 0;
 }
@@ -619,7 +636,7 @@ a.footer {
 
     text-align: center;
     width: 55px;
-    transform: translate(230px, 425px) rotateY(-20deg);
+    transform: translate(230px, 410px) rotateY(-20deg);
     animation: show_up 3s 14s forwards;
     opacity: 0;
 
@@ -631,7 +648,7 @@ a.footer {
 
     text-align: center;
     width: 55px;
-    transform: translate(300px, 420px) rotateY(-25deg);
+    transform: translate(300px, 405px) rotateY(-25deg);
     animation: show_up 3s 14s forwards;
     opacity: 0;
 
