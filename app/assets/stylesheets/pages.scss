@@ -2,76 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.f_ico {
-    position: fixed;
-    text-align: center;
-    width: 50px;
-     transform: translate(15px, 420px) rotateY(20deg);
-     animation: show_up 3s 14s forwards;
-     opacity: 0;
-}
-
-.i_ico {
-    position: fixed;
-    text-align: center;
-    width: 55px;
-    transform: translate(85px, 420px) rotateY(25deg);
-    animation: show_up 3s 14s forwards;
-    opacity: 0;
-
-}
-
-.g_ico {
-    position: fixed;
-
-    text-align: center;
-    width: 65px;
-    transform: translate(155px, 420px);
-    animation: show_up 3s 14s forwards;
-    opacity: 0;
-}
-
-.s_ico {
-    position: fixed;
-
-    text-align: center;
-    width: 55px;
-    transform: translate(235px, 425px) rotateY(-20deg);
-    animation: show_up 3s 14s forwards;
-    opacity: 0;
-
-
-}
-
-.l_ico {
-    position: fixed;
-
-    text-align: center;
-    width: 55px;
-    transform: translate(305px, 420px) rotateY(-25deg);
-    animation: show_up 3s 14s forwards;
-    opacity: 0;
-
+content{
 }
 
 body { 
     background-color: black;
+    
+     
 
-  
-    position:absolute;
+    position: absolute;
+   
     text-align: center;
-
+    
 }
 
+///////// MENU
 ul {
     box-sizing: borde-box;
     position: absolute;
     text-align: center;
     list-style-type: none;
     top: 300px;
-    left: 400px;
+    left: 420px;
     opacity: 0;
-    animation: show_up 3s 14s forwards;
+    animation: show_up 0.8s 15.5s forwards;
 }
 
 li {
@@ -92,6 +46,67 @@ li a {
     text-decoration: none;
   
 }
+
+
+li a:hover {
+    background-color: rgba(220, 235, 21, 0.87);
+    border-radius: 50px;
+
+}
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+
+.buttom {
+    top: 100px;
+    width: 100px;
+    padding: 40px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: rgb(36, 34, 34);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1;
+    animation: show_up 3s 15s forwards;
+    opacity: 0;
+    
+    }
+    
+    .buttom:hover {
+    
+        background: rgba(233, 222, 72, 0.692);}
+    
+    
+    
+    .content{
+        box-sizing: borde-box;
+        background-color: rgb(15, 15, 15);
+       
+        position:relative;
+        max-width: auto;
+        max-height: auto;
+        padding: 50px;
+        margin: 130px;
+        opacity: 0.1;
+    }
+    
+    img {
+        
+    
+        image-rendering: crisp-edges;
+        width:15%;
+      }
+
+////////LOGO
+
+
+
+
+
 .title {
     position: absolute;
     left: 300px;
@@ -103,58 +118,17 @@ li a {
     padding: 10px;
     margin: 0; 
     opacity: 0;
-    animation: show_up 3s 14s forwards;
+    animation: show_up 3.5s 13s forwards;
 }
  
-li a:hover {
-    background-color: rgba(220, 235, 21, 0.87);
-    border-radius: 50px;
 
-}
-.active {
-    background-color: #4CAF50;
-}
 
-.buttom {
-top: 100px;
-width: 100px;
-padding: 40px 0;
-line-height: 0;
-margin: 60px auto;
-background: rgb(36, 34, 34);
-color: white;
-border-radius: 50px;
-cursor: pointer;
-transition: 1;
-animation: show_up 3s 15s forwards;
-opacity: 0;
-
-}
-
-.buttom:hover {
-
-    background: rgba(233, 222, 72, 0.692);}
+//////// HERE STARTS THE ANIMATION 
 
 
 
-.content{
-    box-sizing: borde-box;
-    background-color: rgb(15, 15, 15);
-   
-    position:relative;
-    max-width: auto;
-    max-height: auto;
-    padding: 50px;
-    margin: 130px;
-    opacity: 0.1;
-}
 
-img {
-    
 
-    image-rendering: crisp-edges;
-    width:15%;
-  }
 
 .light {
     transform: translate(495px, 25px) rotateZ(92deg) ;
@@ -233,11 +207,11 @@ img {
     box-sizing: borde-box;
     
     animation:
-            dark 3s 0s forwards linear,
-            falling_b 1.6s 0.2s forwards ease-in,
-            standup_b 1.3s 7.2s forwards ease-out, 
-            looking_arround_b 3.4s 8.7s forwards ease-in, 
-            spill_up_b 0.3s 10.7s forwards ease-in,
+            dark 3s 0.1s forwards linear,
+            falling_b 1.6s 0.3s forwards ease-in,
+            standup_b 1.1s 7.1s forwards ease-out, 
+            looking_arround_b 3s 8.1s forwards ease-in, 
+            spill_up_b 0.2s 10.7s forwards ease-in,
             back_to_background_b 0.5s 11.4s forwards ease-out;
         
 }
@@ -250,11 +224,11 @@ img {
             dark 3s 0.3s forwards linear,
 
             falling 0.5s 1.75s forwards ease-out,
-            standup 1.2s 5.5s forwards ease-out,
-            looking_arround 1.3s 7.5s forwards ease-in, 
-            spill_up 0.5s 10s forwards ease-out,
-            back_to_background 0.5s 11.2s forwards ease-out,
-            rest_in_page 10s 13.3s infinite ease-out;
+            standup 1.3s 5.5s forwards ease-out,
+            looking_arround 1.5s 8.4s forwards ease-in, 
+            spill_up 0.3s 10s forwards ease-out,
+            back_to_background 0.3s 11.1s forwards ease-out,
+            rest_in_page 10s 13.1s infinite ease-out;
             
         }
 
@@ -336,9 +310,9 @@ img {
 32% { transform: translate(197px, 550px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(960deg) scale(1,1.1)}    ///// One jump
 35% { transform: translate(98px, 570px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(960deg) scale(0.7,0.8)}
 
-40% { transform: translate(98px, 570px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(950deg) scale(0.7,0.8)}
-42% { transform: translate(98px, 510px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(950deg) scale(0.8,0.9)}
-45% { transform: translate(-68px, 530px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(950deg) scale(0.6,0.7)}
+50% { transform: translate(98px, 570px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(950deg) scale(0.7,0.8)}
+52% { transform: translate(98px, 510px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(950deg) scale(0.8,0.9)}
+55% { transform: translate(-68px, 530px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(950deg) scale(0.6,0.7)}
 
 60% { transform: translate(-68px, 530px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(940deg) scale(0.6,0.7)}
 62% { transform: translate(-68px, 450px) translateZ(0px) rotateZ(-183deg) rotateX(0deg) rotateY(940deg) scale(0.8,0.9)}
@@ -413,8 +387,12 @@ img {
 
 @keyframes looking_arround_b {
             
-3% { transform: translate(210px, 660px)  translateZ(0px) rotateZ(-210deg)   rotateX(0deg) rotateY(960deg)  scale(0.9,1) }               
-5% {     transform: translate(250px, 660px) translateZ(0px) rotateZ(-210deg) rotateX(0deg) rotateY(960deg) scale(0.9,1) }
+0% { transform: translate(210px, 660px)  translateZ(0px) rotateZ(-183deg)   rotateX(0deg) rotateY(960deg)  scale(1,1.2) }               
+
+1% { transform: translate(215px, 620px)  translateZ(0px) rotateZ(-183deg)   rotateX(0deg) rotateY(960deg)  scale(1.5,1.5) }               
+
+
+7% {     transform: translate(250px, 660px) translateZ(0px) rotateZ(-210deg) rotateX(0deg) rotateY(960deg) scale(0.9,1) }
 8% {     transform:translate(290px, 600px) translateZ(0px) rotateZ(-210deg) rotateX(0deg) rotateY(960deg) scale(0.8,0.9) }
 10% {    transform:  translate(250px, 540px)  translateZ(0px)  rotateZ(-150deg)  rotateX(0deg)   rotateY(960deg) scale(0.7,0.8) }
 13% {    transform:translate(210px, 540px) translateZ(0px) rotateZ(-150deg) rotateX(0deg) rotateY(960deg) scale(0.7,0.8) }                       
@@ -465,14 +443,22 @@ img {
 
  @keyframes back_to_background_b { 
 0% { transform: translateX(-105px) translateY(550px)  translateZ(0px) rotateZ(-98deg)  rotateX(0deg) rotateY(-2720deg) scale(7, 6) }
-50% { transform: translateX(-105px) translateY(550px)  translateZ(0px) rotateZ(-98deg)  rotateX(0deg) rotateY(-2720deg) scale(9, 7) }
+60% { transform: translateX(-105px) translateY(550px)  translateZ(0px) rotateZ(-98deg)  rotateX(0deg) rotateY(-2720deg) scale(9, 7) }
+65% { transform: translateX(-105px) translateY(550px)  translateZ(0px) rotateZ(-98deg)  rotateX(0deg) rotateY(-2720deg) scale(9, 7) }
+67% { transform: translateX(-105px) translateY(550px)  translateZ(0px) rotateZ(-98deg)  rotateX(0deg) rotateY(-2720deg) scale(12, 9) }
+75% { transform: translateX(-105px) translateY(550px)  translateZ(0px) rotateZ(-98deg)  rotateX(0deg) rotateY(-2720deg) scale(9, 7) }
 
-60% {transform: translateX(-50px)  translateY(300px)   translateZ(0px)  rotateZ(-98deg)  rotateX(0deg)  rotateY(960deg)  scale(7, 6) }
+78% {transform: translateX(-50px)  translateY(300px)   translateZ(0px)  rotateZ(-98deg)  rotateX(0deg)  rotateY(960deg)  scale(7, 6) }
 100% { transform: translateX(230px)  translateY(330px)  translateZ(0px) rotateZ(-90deg)  rotateX(0deg) rotateY(960deg) scale(3.9, 2.3)}   }
 
  @keyframes rest_in_page_b {
 0% {}
 }
+
+
+
+///////FONTS STYLE AND MAIN
+
 
 h2 {
     font-family: 'Libre Barcode 128 Text', cursive;
@@ -519,7 +505,7 @@ input[type=submit]:hover {
 div.a {
     position: absolute;
     left: 350px;
-    bottom: 250px;
+    bottom: 230px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -528,7 +514,7 @@ div.a {
 div.b {
     position: absolute;
     left: 350px;
-    bottom: 2200px;
+    bottom: 2300px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -538,7 +524,7 @@ div.b {
 div.c {
     position: absolute;
     left: 350px;
-    bottom: 1200px;
+    bottom: 1500px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -555,6 +541,141 @@ a.profile_photo {
     transform:rotateZ(15deg);
     
     
-    footer {}
     
 }
+
+////////FUNCTIONS AND ICONS
+
+.go_up {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top:105%;
+    right:10px;
+    background-color: rgba(241, 219, 19, 0.87);
+    border-radius: 50%;
+    display: inline-block;
+   
+    
+}
+
+ .gp_up:hover { 
+
+position: absolute;
+background: white;
+transform: rotate(90deg);
+
+}
+
+a.footer {
+    
+  
+    position: fixed;
+    left: 555px;
+    bottom: 50px;
+    font-size: 30px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    width: 320px;
+    padding: 10px;
+    margin: 0; 
+    opacity: 0.3;
+    animation: show_up 1.4s 17s forwards ease-out;
+     
+
+}
+
+
+.f_ico {
+    position: fixed;
+    text-align: center;
+    width: 50px;
+     transform: translate(10px, 420px) rotateY(20deg);
+     animation: show_up 3s 14s forwards;
+     opacity: 0;
+}
+
+.i_ico {
+    position: fixed;
+    text-align: center;
+    width: 55px;
+    transform: translate(80px, 420px) rotateY(25deg);
+    animation: show_up 3s 14s forwards;
+    opacity: 0;
+
+}
+
+.g_ico {
+    position: fixed;
+
+    text-align: center;
+    width: 65px;
+    transform: translate(150px, 420px);
+    animation: show_up 3s 14s forwards;
+    opacity: 0;
+}
+
+.s_ico {
+    position: fixed;
+
+    text-align: center;
+    width: 55px;
+    transform: translate(230px, 425px) rotateY(-20deg);
+    animation: show_up 3s 14s forwards;
+    opacity: 0;
+
+
+}
+
+.l_ico {
+    position: fixed;
+
+    text-align: center;
+    width: 55px;
+    transform: translate(300px, 420px) rotateY(-25deg);
+    animation: show_up 3s 14s forwards;
+    opacity: 0;
+
+}
+.r_ico {
+    position: absolute;
+
+    text-align: center;
+    width: 75px;
+    transform: translate(150px, 135px) rotateY(-25deg);
+    
+    opacity: 1;
+
+}
+
+.ra_ico {
+    position: absolute;
+
+    text-align: center;
+    width: 60px;
+    transform: translate(-110px, 135px) rotateY(-25deg);
+    
+    opacity: 1;
+
+}
+.h_ico {
+    position: absolute;
+
+    text-align: center;
+    width: 75px;
+    transform: translate(50px, 135px) rotateY(-25deg);
+    
+    opacity: 1;
+
+}
+.c_ico {
+    position: absolute;
+
+    text-align: center;
+    width: 100px;
+    transform: translate(-230px, 120px) rotateY(-25deg);
+    
+    opacity: 1;
+
+}
+
+
