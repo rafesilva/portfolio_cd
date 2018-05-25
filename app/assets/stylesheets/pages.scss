@@ -1,15 +1,30 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html {scroll-behavior: smooth;}
-content{
+
+@media screen and (max-width: 600px) {
+    
+body {
+    position: relative;
+
+    width: 800%;
 }
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
 
 body { 
     
     background-color: black;
-
-    position: absolute;
+    width: 100%;
+    position: relative;
    
     text-align: center;
   
@@ -463,10 +478,15 @@ li a:hover {
 
 h2 {
     font-family: 'Libre Barcode 128 Text', cursive;
-    font-size: 65px;
+    font-size: 55px;
     top: 25px;
 
-h3 {font-family: 'Roboto', sans-serif;}
+h3.a {
+    
+    font-family: 'Roboto', sans-serif;
+    
+}
+
 
 }
 input[type=text], select {
@@ -522,7 +542,6 @@ div.b {
     background-color: #f2f2f2;
     padding: 20px;
     opacity: 0.85;
-
 }
 div.c {
     position: absolute;
@@ -532,7 +551,6 @@ div.c {
     background-color: #f2f2f2;
     padding: 20px;
     opacity: 0.85;
-
 }
 
 img.profile_photo {
@@ -553,10 +571,10 @@ a.go_up {
     position: absolute;
     height: 35px;
     width: 35px;
-    top:105%;
+    top:106%;
     right:10px;
     
-    background-color: rgba(75, 71, 27, 0.87);
+    background-color: rgba(128, 121, 44, 0.87);
     border-radius: 50%;
     display: inline-block;
     border-color:black;
@@ -571,8 +589,8 @@ a.go_up {
 
 
 background: rgba(228, 200, 43, 0.836);
-animation: go_up 1s ease-in,
-            show_up 0.5s;
+animation: go_up 0.8s ease-in,
+            show_up 2s;
 color: black;
 
 
@@ -657,7 +675,7 @@ a.footer {
     position: absolute;
 
     text-align: center;
-    width: 75px;
+    width: 15%;
     transform: translate(150px, 135px) rotateY(-25deg);
     
     opacity: 1;
@@ -668,7 +686,7 @@ a.footer {
     position: absolute;
 
     text-align: center;
-    width: 60px;
+    width: 15%;
     transform: translate(-110px, 135px) rotateY(-25deg);
     
     opacity: 1;
@@ -678,7 +696,7 @@ a.footer {
     position: absolute;
 
     text-align: center;
-    width: 75px;
+    width: 15%;
     transform: translate(50px, 135px) rotateY(-25deg);
     
     opacity: 1;
@@ -688,7 +706,7 @@ a.footer {
     position: absolute;
 
     text-align: center;
-    width: 100px;
+    width: 15%;
     transform: translate(-230px, 120px) rotateY(-25deg);
     
     opacity: 1;
